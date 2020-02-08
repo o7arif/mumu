@@ -1,81 +1,56 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Comming Soon!</title>
-        <link rel="stylesheet" type="text/css" href="opensans.css">
-        <style type="text/css">
-                body {
-                    background: #363f48;
-                    color: white;
-                    font: normal 12px 'Open Sans', sans-serif;
-                    margin-top: 20px;
-                }
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>Coming soon!</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
 
-                ul.countdown {
-                    list-style: none;
-                    margin: 75px 0;
-                    padding: 0;
-                    display: block;
-                    text-align: center;
-                }
+<body>
 
-                ul.countdown li {
-                    display: inline-block;
-                }
+<!-- Start countdown Area -->
+<section class="countdown-area pt-100">
+    <div class="container">
+        <div class="row justify-content-center no-padding">
+            <div class="col-lg-10">
+                <div class="countdown row clock_sec align-items-end clockdiv" id="clockdiv">
+                    <div class="col clockinner1 clockinner">
+                        <span class="days">00</span>
+                        <div class="smalltext">Days</div>
+                    </div>
+                    <div class="col clockinner clockinner1">
+                        <span class="hours">00</span>
+                        <div class="smalltext">Hours</div>
+                    </div>
+                    <div class="col counter-img">
+                        <img src="img/counter.png" alt="">
+                    </div>
+                    <div class="col clockinner clockinner1">
+                        <span class="minutes">00</span>
+                        <div class="smalltext">Minutes</div>
+                    </div>
+                    <div class="col clockinner clockinner1">
+                        <span class="seconds">00</span>
+                        <div class="smalltext">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End countdown Area -->
 
-                ul.countdown li span {
-                    font-size: 80px;
-                    font-weight: 300;
-                    line-height: 80px;
-                }
-
-                ul.countdown li.seperator {
-                    font-size: 80px;
-                    line-height: 70px;
-                    vertical-align: top;
-                }
-
-                ul.countdown li p {
-                    color: #a7abb1;
-                    font-size: 14px;
-                }
-        </style>
-    </head>
-
-    <body>
-        <ul class="countdown">
-            <li>
-                <span class="days">00</span>
-                <p class="days_ref">days</p>
-            </li>
-            <li class="seperator">.</li>
-            <li>
-                <span class="hours">00</span>
-                <p class="hours_ref">hours</p>
-            </li>
-            <li class="seperator">:</li>
-            <li>
-                <span class="minutes">00</span>
-                <p class="minutes_ref">minutes</p>
-            </li>
-            <li class="seperator">:</li>
-            <li>
-                <span class="seconds">00</span>
-                <p class="seconds_ref">seconds</p>
-            </li>
-        </ul>
-
-        <script type="text/javascript" src="jquery.min.js"></script>
-        <script type="text/javascript" src="jquery.downCount.js"></script>
-
-        <script class="source" type="text/javascript">
-            $('.countdown').downCount({
-                date: '02/13/2020 23:59:59',
-                offset: +6
-            }, function () {
-                alert('WOOT WOOT, done!');
-            });
-        </script>
-    </body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.downCount.js"></script>
+<script class="source" type="text/javascript">
+    $('.countdown').downCount({
+        date: '02/13/2020 23:59:59',
+        offset: +6
+    }, function () {
+        alert('WOOT WOOT, done!');
+    });
+</script>
+</body>
 </html>
